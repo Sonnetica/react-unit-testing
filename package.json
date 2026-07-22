@@ -26,14 +26,14 @@
   },
   "jest": {
     "coverageThreshold": {
-        "global": {
-            "lines": 80,
-            "branches": 80,
-            "statements":-10,
-            "functions":80
-        }
+      "global": {
+        "lines": 80,
+        "branches": 80,
+        "statements": -10,
+        "functions": 80
+      }
     }
-},
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -45,5 +45,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.29.7",
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-no-unsanitized": "^4.1.5",
+    "eslint-plugin-security": "^4.0.1",
+    "eslint-plugin-security-node": "^1.1.4",
+    "eslint-plugin-testing-library": "^7.16.2"
   }
 }

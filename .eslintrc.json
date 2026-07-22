@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": [
+    "security"
+  ],
+  "rules": {
+    "security/detect-eval-with-expression": "error",
+    "security/detect-unsafe-regex": "warn",
+    "security/detect-non-literal-require": "warn",
+    "security/detect-object-injection": "warn"
+  }
+}
